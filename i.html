@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Campería Malaguita — Málaga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="s.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#inicio">La Camper<em>ía</em></a>
+    <ul class="nav-links">
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú móvil">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#menu"      onclick="closeMobile()">Menú</a>
+    <a href="#nosotros"  onclick="closeMobile()">Nosotros</a>
+    <a href="#reservas"  onclick="closeMobile()">Reservas</a>
+    <a href="#contacto"  onclick="closeMobile()">Contacto</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="inicio">
+    <p class="hero-tag">Malaga Urban Food · Paseo de Sancha, Málaga</p>
+    <h1 class="hero-title">La<br><em>Campería</em></h1>
+    <p class="hero-sub">Cocina artesanal malagueña con alma de barrio</p>
+    <div class="hero-ctas">
+      <a href="#reservas" class="btn-primary">Reservar mesa</a>
+      <a href="#menu"     class="btn-outline">Ver carta</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Descubrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu">
+    <p class="section-label reveal">La Carta</p>
+    <h2 class="section-title reveal">Sabores que<br><em>hablan</em> de Málaga</h2>
+    <div class="divider reveal"></div>
+    <p class="section-desc reveal">Ingredientes frescos, recetas de siempre y ese toque que solo tiene la cocina malagueña. Cada plato, una historia.</p>
+
+    <div class="menu-grid reveal">
+      <div class="menu-category">
+        <div class="cat-icon">🥖</div>
+        <p class="cat-name">Camperos</p>
+        <p class="cat-desc">El bocadillo icónico de Málaga, en pan redondo y tostado con ingredientes seleccionados.</p>
+        <ul class="menu-items">
+          <li><span class="item-name">Campero clásico</span>      <span class="item-price">7,50 €</span></li>
+          <li><span class="item-name">Campero de atún</span>      <span class="item-price">7,00 €</span></li>
+          <li><span class="item-name">Campero especial</span>     <span class="item-price">9,00 €</span></li>
+          <li><span class="item-name">Campero vegetariano</span>  <span class="item-price">7,50 €</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <div class="cat-icon">🍳</div>
+        <p class="cat-name">Desayunos</p>
+        <p class="cat-desc">Mollete, pan de cereales, tostadas y todo lo que necesitas para empezar el día.</p>
+        <ul class="menu-items">
+          <li><span class="item-name">Mollete con aceite</span>   <span class="item-price">2,50 €</span></li>
+          <li><span class="item-name">Tostada con jamón</span>    <span class="item-price">4,50 €</span></li>
+          <li><span class="item-name">Tostada con atún</span>     <span class="item-price">4,00 €</span></li>
+          <li><span class="item-name">Café + tostada</span>       <span class="item-price">3,80 €</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <div class="cat-icon">🫒</div>
+        <p class="cat-name">Tapas</p>
+        <p class="cat-desc">Cocina casera de toda la vida. Croquetas, tortilla, patatas bravas y mucho más.</p>
+        <ul class="menu-items">
+          <li><span class="item-name">Croquetas (6 ud.)</span>    <span class="item-price">5,50 €</span></li>
+          <li><span class="item-name">Tortilla de patatas</span>  <span class="item-price">4,50 €</span></li>
+          <li><span class="item-name">Patatas bravas</span>       <span class="item-price">4,00 €</span></li>
+          <li><span class="item-name">Ensaladilla rusa</span>     <span class="item-price">4,50 €</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <div class="cat-icon">🍽️</div>
+        <p class="cat-name">Platos</p>
+        <p class="cat-desc">Rabo de toro, salmón, lomo… platos con carácter elaborados con cariño y buena materia prima.</p>
+        <ul class="menu-items">
+          <li><span class="item-name">Rabo de toro</span>         <span class="item-price">13,50 €</span></li>
+          <li><span class="item-name">Salmón a la plancha</span>  <span class="item-price">12,00 €</span></li>
+          <li><span class="item-name">Lomo Rockford</span>        <span class="item-price">13,00 €</span></li>
+          <li><span class="item-name">Puchero malagueño</span>    <span class="item-price">10,50 €</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros">
+    <div class="nosotros-visual reveal">
+      <div class="nosotros-visual-inner">
+        <div class="big-letter"></div>
+      </div>
+      <div class="nosotros-badge">
+        <strong>4.6</strong>
+        <span>⭐ TripAdvisor</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="section-label">Nuestra historia</p>
+      <h2 class="section-title">Un bar de barrio<br>con <em>alma propia</em></h2>
+      <div class="divider"></div>
+      <p class="section-desc">
+        La Campería es ese sitio donde los malagueños van a desayunar, comer y cenar sin pretensiones. Un bar con terraza en el Paseo de Sancha donde la cocina casera manda: camperos auténticos, tapas con sabor a casa y trato de los de siempre.
+      </p>
+      <p class="section-desc" style="margin-top: -1.5rem;">
+        Sin artificios. Solo producto fresco, recetas honestas y el placer de comer bien a buen precio en uno de los rincones más bonitos de Málaga.
+      </p>
+      <div class="pills">
+        <span class="pill">Terraza exterior</span>
+        <span class="pill">Cocina artesanal</span>
+        <span class="pill">Pet friendly</span>
+        <span class="pill">Precio asequible</span>
+        <span class="pill">Ambiente local</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <div class="horarios-strip">
+    <div class="horario-item reveal">
+      <p class="day">Lunes — Martes</p>
+      <p class="hours">9:00 — 21:00</p>
+    </div>
+    <div class="horario-item reveal">
+      <p class="day">Miércoles — Viernes</p>
+      <p class="hours">9:00 — 00:00</p>
+    </div>
+    <div class="horario-item reveal">
+      <p class="day">Sábado — Domingo</p>
+      <p class="closed">Cerrado</p>
+    </div>
+  </div>
+
+  <!-- RESERVAS -->
+  <section id="reservas">
+    <div class="reservas-inner">
+      <div>
+        <p class="section-label reveal">Reservas</p>
+        <h2 class="section-title reveal">Asegura<br>tu <em>mesa</em></h2>
+        <div class="divider reveal"></div>
+        <p class="section-desc reveal">
+          Reserva con antelación y disfruta sin esperas. Terraza o interior, somos tu lugar en Málaga.
+        </p>
+        <p class="section-desc reveal" style="margin-top:-1.5rem; font-style: italic; font-size: .85rem;">
+          También puedes llamarnos directamente al: <br> <strong style="color:var(--dark)">+34 952 000 000</strong> o enviarnos un email.
+        </p>
+      </div>
+
+      <form onsubmit="handleReserva(event)" class="reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+34 ..." required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" required />
+          </div>
+          <div class="form-group">
+            <label for="hora">Hora</label>
+            <select id="hora" required>
+              <option value="">Selecciona</option>
+              <option>09:00</option><option>10:00</option><option>11:00</option>
+              <option>12:00</option><option>13:00</option><option>14:00</option>
+              <option>15:00</option><option>19:00</option><option>20:00</option>
+              <option>21:00</option><option>22:00</option><option>23:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="personas">Personas</label>
+            <select id="personas" required>
+              <option value="">Selecciona</option>
+              <option>1 persona</option><option>2 personas</option><option>3 personas</option>
+              <option>4 personas</option><option>5 personas</option><option>6 personas</option>
+              <option>7+ personas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="zona">Zona preferida</label>
+            <select id="zona">
+              <option>Sin preferencia</option>
+              <option>Terraza</option>
+              <option>Interior</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="notas">Notas adicionales</label>
+          <textarea id="notas" placeholder="Alergias, celebración, preferencias…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%; cursor:pointer; font-family:'DM Sans',sans-serif;">
+          Solicitar reserva
+        </button>
+        <p class="reservas-note">Recibirás confirmación en menos de 24 horas. Solo abrimos de lunes a viernes.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONFIRMACIÓN RESERVA (oculta) -->
+  <div id="reserva-ok" style="display:none; text-align:center; padding:3rem; background:var(--white); margin:0 5vw 4rem; border:1.5px solid var(--sand);">
+    <p style="font-size:2.5rem; margin-bottom:1rem;">🎉</p>
+    <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; color:var(--dark); margin-bottom:.5rem;">¡Reserva recibida!</h3>
+    <p style="color:var(--mid); font-size:.95rem;">Te confirmaremos en breve. ¡Hasta pronto en La Campería!</p>
+  </div>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <p class="section-label reveal">Encuéntranos</p>
+    <h2 class="section-title reveal">¿Cómo <em>llegar</em>?</h2>
+    <div class="divider reveal"></div>
+
+    <div class="contacto-grid reveal">
+      <div class="contacto-item">
+        <h3>📍 Dirección</h3>
+        <p>Paseo de Sancha, 10<br>29016 Málaga<br>Andalucía, España</p>
+      </div>
+      <div class="contacto-item">
+        <h3>🕐 Horario</h3>
+        <p>Lunes – Martes: 9:00 – 21:00<br>Miércoles – Viernes: 9:00 – 00:00<br>Sábado y Domingo: <em>cerrado</em></p>
+      </div>
+      <div class="contacto-item">
+        <h3>📞 Contacto</h3>
+        <p>
+          <a href="tel:+34952000000">+34 952 000 000</a><br>
+          <a href="mailto:hola@lacamperia.es">hola@lacamperia.es</a>
+        </p>
+      </div>
+      <div class="contacto-item">
+        <h3>🔗 Síguenos</h3>
+        <p>
+          <a href="https://www.facebook.com/lacamperiamlg/" target="_blank">Facebook</a><br>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g187438-d11651374" target="_blank">TripAdvisor ⭐ 4.6</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="map-placeholder reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.4!2d-4.4063!3d36.7199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7d9de4d0b6f%3A0x0!2sPaseo+de+Sancha+10%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1680000000000!5m2!1ses!2ses"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">La Camper<em>ía</em> Malaguita</div>
+    <p>© 2025 La Campería · Paseo de Sancha 10, Málaga</p>
+    <p style="font-size:.7rem;">Malaga Urban Food</p>
+  </footer>
+
+  <script>
+    // Nav scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Hamburger
+    const ham = document.getElementById('hamburger');
+    const mob = document.getElementById('mobileMenu');
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      mob.classList.toggle('open');
+    });
+    function closeMobile() {
+      ham.classList.remove('open');
+      mob.classList.remove('open');
+    }
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    reveals.forEach(r => io.observe(r));
+
+    // Reserva form
+    function handleReserva(e) {
+      e.preventDefault();
+      e.target.closest('section').style.display = 'none';
+      document.getElementById('reserva-ok').style.display = 'block';
+      document.getElementById('reserva-ok').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // Set min date to today
+    const dateInput = document.getElementById('fecha');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+  </script>
+</body>
+</html>
